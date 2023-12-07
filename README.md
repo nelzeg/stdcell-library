@@ -1,15 +1,15 @@
-## Open-Source Standard Cell Design Methodology 
+# Open-Source Standard Cell Design Methodology 
 
-This repository contains the files of the project *Open-Source Standard Cell and I/O Cell Design*.  
-This project was developed by the students **Jhon Pinto** and **Nelson Rodriguez** with the direction of professors **Sebastian Moya** and **Jaime Barrero** at the [**Industrial University of Santander**](https://uis.edu.co/en/)
+A 12-track height standard cell library built in [SKY130 PDK](https://skywater-pdk.readthedocs.io/en/main/). The cells were designed using [Magic VLSI Layout Tool](https://github.com/RTimothyEdwards/magic) and characterized using [Digital Standard Cell Characterizer (DSCC)](https://github.com/nelzeg/stdcell-characterizer). 
 
-> The detailed documentation of this project could be read [here](./CECIOCA_Paper.pdf).  
+> The detailed documentation of this library can be read in ***[Open-Source Standard Cell and I/O Cell Design](./open-source_standard_cell_and_IO_cell_design.pdf)***
 
-### Standard Cell Library  
+## The Library
 
-> Student: **Nelson Rodriguez**    
+<div align="center"><img src="library_layouts.png"></div>
 
-Ten standard cells were designed and characterized using the [Sky130 PDK](https://skywater-pdk.readthedocs.io/en/main/) and are saved in the folder [standard-cells](./).
+It consists of the following 12 combinational cells:
+
 1. [INV](./01-inv/)
 2. [BUFF](./02-buff/)
 3. [NAND2](./03-nand2/)
@@ -21,18 +21,25 @@ Ten standard cells were designed and characterized using the [Sky130 PDK](https:
 9. [AOI211](./09-aoi211/)
 10. [OAI211](./10-oai211/)
 
-Each cell folder contains the following files:
+Where each cell consists of the following views (files): 
 - Layout (`.mag`)
 - LEF (`.lef`)
 - Extracted Spice model (`.spice`)
 - LIB (`.lib`)
 - Timing data (`.txt`)
 
-It was developed a set of scripts during the design process and for the cell characterization:  
+---
+
+<br>
+<div align="center"><b >👇🏼 Click on the image to watch the slides</b></div>
+<br>
+<div align="center"><a href="https://docs.google.com/presentation/d/e/2PACX-1vSXuRpTWI4aAAaqa8VsDa4a-RrmfYroPuvIVUKc1MaYIVBlVbhsJw8YYeM-qnCpCe0Z1ySovhzvZj0m/pub?start=false&loop=false&delayms=6000"><img src="slides_cover.png" target="_blank" frameborder="0" width="680" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></a></div>
+
+## Design Files
+
+It was developed a set of scripts during both the design process and the cell characterization:  
 1. [DSCC](./scripts/dscc/) : Digital Standard Cell Characterization tool.
 2. [Fo4](./scripts/fo4/) : Data and post-processing script for the Fo4 testbench.
 3. [Grid Template](./scripts/grid-template/) : Script to create custom height grids for layout implementation.
 4. [Inverter Chain](./scripts/inverter-chain/) : Data and post-processing scripts for the inverter chain testbench.
 5. [Results](./scripts/results/) : Testbench for timing measurements of the inverter designed with the optimal widths obtained.    
-
-The whole repository could be found [here](https://github.com/ceciocauis/ceciocauis)
