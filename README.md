@@ -8,7 +8,7 @@ A 12-track height standard cell library built in [SKY130 PDK](https://skywater-p
 
 <div align="center"><img src="library_layouts.png"></div>
 
-It consists of the following 12 combinational cells:
+It is made up of the following 12 combinational cells:
 
 1. [INV](./01-inv/)
 2. [BUFF](./02-buff/)
