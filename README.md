@@ -1,6 +1,6 @@
 # Open-Source Standard Cell Design Methodology 
 
-A 12-track height standard cell library built in [SKY130 PDK](https://skywater-pdk.readthedocs.io/en/main/). The cells were designed using [Magic VLSI Layout Tool](https://github.com/RTimothyEdwards/magic) and characterized using [Digital Standard Cell Characterizer (DSCC)](https://github.com/nelzeg/stdcell-characterizer). 
+A 12-track height standard cell library built in [SKY130 PDK](https://skywater-pdk.readthedocs.io/en/main/). It is made up of 12 combinational cells, which were designed using [Magic VLSI Layout Tool](https://github.com/RTimothyEdwards/magic) and characterized using [Digital Standard Cell Characterizer (DSCC)](https://github.com/nelzeg/stdcell-characterizer). 
 
 > The detailed documentation of this library can be read in ***[Open-Source Standard Cell and I/O Cell Design](./open-source_standard_cell_and_IO_cell_design.pdf)***
 
